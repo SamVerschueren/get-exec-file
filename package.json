@@ -1,0 +1,40 @@
+{
+  "name": "get-exec-file",
+  "version": "0.0.0",
+  "description": "Promisify execFile",
+  "license": "MIT",
+  "repository": "SamVerschueren/get-exec-file",
+  "author": {
+    "name": "Sam Verschueren",
+    "email": "sam.verschueren@gmail.com",
+    "url": "github.com/SamVerschueren"
+  },
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "get",
+    "execFile",
+    "promise",
+    "promisify",
+    "childprocess",
+    "process"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "*",
+    "meow": "^3.5.0",
+    "xo": "*"
+  },
+  "xo": {
+    "ignores": [
+      "test.js"
+    ]
+  }
+}
