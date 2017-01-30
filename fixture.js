@@ -9,6 +9,10 @@ cli.input.forEach(function (input) {
 	log(input);
 });
 
+if (cli.flags.cat) {
+	process.stdin.pipe(process.stdout);
+}
+
 if (cli.flags.exit) {
 	process.exit(1);
 }

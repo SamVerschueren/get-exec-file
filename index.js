@@ -6,8 +6,9 @@ module.exports = function (file, args, options) {
 		return Promise.reject(new Error('Expected a file'));
 	}
 
-	return new Promise(function (resolve, reject) {
-		execFile(file, args, options, function (err, stdout, stderr) {
+	var child;
+	var promise = new Promise(function (resolve, reject) {
+		child = execFile(file, args, options, function (err, stdout, stderr) {
 			if (err) {
 				err.stdout = stdout;
 				err.stderr = stderr;
@@ -18,4 +19,7 @@ module.exports = function (file, args, options) {
 			resolve({stdout: stdout, stderr: stderr});
 		});
 	});
+	child.then = promise.then.bind(promise);
+	child.catch = promise.catch.bind(promise);
+	return child;
 };
