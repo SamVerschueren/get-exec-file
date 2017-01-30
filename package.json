@@ -30,11 +30,6 @@
   "devDependencies": {
     "ava": "*",
     "meow": "^3.5.0",
-    "xo": "*"
-  },
-  "xo": {
-    "ignores": [
-      "test.js"
-    ]
+    "xo": "0.16.0"
   }
 }

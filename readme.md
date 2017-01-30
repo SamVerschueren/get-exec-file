@@ -27,7 +27,7 @@ execFile('./cli.js', ['foo', 'bar']).then(result => {
 
 #### file
 
-*Required*  
+*Required*<br>
 Type: `string`
 
 The filename of the program to run.
