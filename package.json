@@ -1,6 +1,6 @@
 {
   "name": "get-exec-file",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Promisify execFile",
   "license": "MIT",
   "repository": "SamVerschueren/get-exec-file",
